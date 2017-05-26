@@ -1,0 +1,179 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Voltar</span>
+            </a>
+        </div>
+        <div class="center sliding">Dados da viagem</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="saida" class="page">
+        <div class="page-content">
+            <div class="content-block">
+                
+                <div class="content-block-title"><i class="icon ion-android-car size-30"></i>&emsp;Informações de saída</div>
+                <div class="list-block">
+                  
+                  <ul>
+                    <!-- Text inputs -->
+                    <li>
+                     
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-person"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Solicitante</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="solicitante" type="text" placeholder=""></fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </li>
+
+                    <li>
+                     
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-person"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Motorista</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="motorista" type="text" placeholder=""> </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </li>
+
+                    <li>
+                     
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-pin"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Local de Saída</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="local_saida" type="text" placeholder=""></fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-calendar"></i></div>
+                         <div class="item-inner">
+                          <div class="item-title label">Saída</div>
+                          <div class="item-input">
+                            <div class="row">
+                            
+                            <div class="col-60"><fieldset disabled><input id="data_vg_saida" type="text" placeholder=""></fieldset></div>
+                            <div class="col-40"><fieldset disabled><input id="horario_saida" type="text" placeholder="xx:xx"></fieldset></div>
+                          </div>
+                        </div>
+                      </div>                  
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-speedometer"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Odômetro na Saída</div>
+                          <div class="item-input">
+                            <input id="odometro_saida" type="text" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li  >
+                    <div class="item-content">
+                        <div class="item-media"><i class="icon ion-speedometer"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Combustível de Saída</div>
+                          <div class="item-input">
+                                <span id="fuelGaugeContainer"> </span>
+                                <div id="item_comb" class="list-block">
+                                    <div class="range-slider">
+                                      <input id="comb_saida" type="range" min="0" max="100" value="0" step="1">
+                                    </div> 
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                     
+                    </li>
+                    <li>
+                      
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-pin"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Itinerario</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="itinerario" type="text" placeholder=""> </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div id="icon_passageiro" class="item-media"><i class="icon ion-android-calendar"></i></div>
+                         <div class="item-inner">
+                          <div class="item-title label">Previsão de Chegada</div>
+                          <div class="item-input">
+                            <div class="row">
+                            
+                            <div class="col-60"><fieldset disabled><input id="data_vg_chegada" type="text" placeholder=""></fieldset></div>
+                            
+                            <div class="col-40"><fieldset disabled><input id="horario_chegada" type="text" placeholder="xx:xx"></fieldset></div>
+                          </div>
+                        </div>
+                      </div>                  
+                    </li>
+
+                    <li class="align-top">
+                      <div class="item-content">
+                        <div class="item-media" style="margin-bottom: auto; margin-top: auto;"><i class="icon ion-android-people"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Passageiros</div>
+                          <div class="item-input">
+                              <div id="lista_passageiros" style="padding-top:5px">
+                                
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li  >
+                    <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-textsms"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Observações</div>
+                          <div class="item-input">
+                             <textarea id="observacoes_saida"></textarea>
+                          </div>
+                        </div>
+                    </div>
+                     
+                    </li>
+                    
+                  </ul>
+                
+                </div> <!-- fim do div list block -->
+
+                
+                        
+              
+              
+
+                <a id="botao_inicia_viagem" href="viagem_andamento.html" class="button button-big">Iniciar Viagem</a>
+            </div>
+        </div>
+    </div>
+</div>

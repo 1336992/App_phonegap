@@ -1,0 +1,137 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Voltar</span>
+            </a>
+        </div>
+        <div class="center sliding">Dados da viagem</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="retorno" class="page">
+        <div class="page-content">
+            <div class="content-block">
+                
+                <div class="content-block-title"><i class="icon ion-android-car size-30"></i>&emsp;Informações do retorno</div>
+                <div class="list-block">
+                  
+                  <ul>
+                    <!-- Text inputs -->
+                    <li>
+                     
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-person"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Solicitante</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="solicitante" type="text" placeholder=""></fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </li>
+
+                    <li>
+                     
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-person"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Motorista</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="motorista" type="text" placeholder=""> </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </li>
+
+                    <li>
+                     
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-pin"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Local de Chegada</div>
+                          <div class="item-input">
+                            <fieldset disabled><input id="local_chegada" type="text" placeholder=""></fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-calendar"></i></div>
+                         <div class="item-inner">
+                          <div class="item-title label">Chegada</div>
+                          <div class="item-input">
+                            <div class="row">
+                            
+                            <div class="col-60"><fieldset disabled><input id="data_vg_chegada" type="text" placeholder=""></fieldset></div>
+                            <div class="col-40"><fieldset disabled><input id="horario_chegada" type="text" placeholder="xx:xx"></fieldset></div>
+                          </div>
+                        </div>
+                      </div>                  
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon ion-speedometer"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Odômetro na Chegada</div>
+                          <div class="item-input">
+                            <input id="odometro_chegada" type="text" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li  >
+                    <div class="item-content">
+                        <div class="item-media"><i class="icon ion-speedometer"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Combustível de Chegada</div>
+                          <div class="item-input">
+                                <span id="fuelGaugeContainer"> </span>
+                                <div id="item_comb" class="list-block">
+                                    <div class="range-slider">
+                                      <input id="comb_chegada" type="range" min="0" max="100" value="0" step="1">
+                                    </div> 
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                     
+                    </li> 
+                    <li  >
+                    <div class="item-content">
+                        <div class="item-media"><i class="icon ion-android-textsms"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Observações</div>
+                          <div class="item-input">
+                             <textarea id="observacoes_chegada"></textarea>
+                          </div>
+                        </div>
+                    </div>
+                     
+                    </li>
+                    
+                  </ul>
+                
+                </div> <!-- fim do div list block -->
+
+                
+                        
+                <a href="fim_viagem.html">teste...</a>
+              
+
+                <a id="botao_finaliza_viagem" href="fim_viagem.html" class="button button-big">Finalizar Viagem</a>
+            </div>
+        </div>
+    </div>
+</div>

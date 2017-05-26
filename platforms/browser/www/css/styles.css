@@ -1,0 +1,160 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+#left-title{
+	color: black;
+}
+
+.panel{
+	background-color: #FFFFFF;
+}
+
+div#botao-cadastro {
+    position: relative;
+    bottom: 0%;
+    left:0%;
+    right: 0%;
+}
+
+#center-big-car{
+	height: 200px;
+	
+}
+
+div#item_comb.list-block{
+	margin-top: 0px;
+    margin-bottom: 0px;
+    width: 150px;
+}
+
+span#fuelGaugeContainer {
+    display: inline-block;
+}
+
+h2#titulo-finalizada{
+	text-align: center;
+	font-size: 1.9em;
+}
+
+.list-block input[type=password]{
+	font-size: 14px;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb { 
+    border: 1px solid silver;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+div.item-title.label{
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 0.80em;
+}
+
+
+fieldset{
+	border: 0px;
+	padding:0px;
+	margin:	0px;
+}
+
+h2#legenda_img_andamento{
+	text-align: center;
+	color: #22AA22;
+}
+
+textarea#observacoes_saida{
+	font-size: 0.8em;	
+}
+
+
+
+.statusbar-overlay {
+    background: #000000;
+}
+#info_carro{
+	visibility: hidden;
+}
+
+#info_viagens, #info_tipo_viagens{
+	visibility: hidden;
+}
+
+#img-carro,#img-carro-saida {
+	width: 100%;
+}
+
+.seta_viagem{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.size-30{
+	font-size: 30px;
+}
+
+.size-50{
+	font-size: 50px;
+}
+
+.size-200{
+	font-size: 150px;
+}
+
+.card{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.itinerario{
+	width: 90%;
+}
+
+#saida_div, #chegada_div{
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	font-size: 0.8em
+
+}
+
+.col45{
+	margin-left: 2.5px;
+	margin-right: 2.5px;
+}
+
+.col5{
+	width: 15px;
+}
+
+.list-block ul{
+	margin-bottom: 10px;
+}
+
+.list-block .item-title{
+	white-space: normal;
+}
+
+.list-block input[type=text], #lista_passageiros{
+	font-size: 0.8em;
+	white-space: normal;
+
+}
+
+.demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+  }
